@@ -1,0 +1,508 @@
+
+ html {
+    background: rgb(251,63,63);
+background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgb(25, 25, 25) 150%);
+} 
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('Jersey_15/Jersey15-Regular.ttf');
+}
+
+@font-face {
+  font-family: Jersey;
+  src: url('Jersey_15/Silkscreen/Silkscreen-Regular.ttf');
+}
+
+
+
+
+
+
+/*NAVBAR*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    /*change @ media query*/
+    @media (width >= 40em) {
+      padding: 0px 50px;
+    }
+
+    @media (width >= 60rem) {
+      padding: 0px 100px;
+    }
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Jersey';
+    object-fit: cover;
+
+    @media (width >= 40em) {
+      font-size: 1.5rem;
+    }
+
+    @media (width >= 60rem) {
+      font-size: 2.2rem;
+    }
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.900rem;
+    padding: 0px 0px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    font-family: 'myFirstFont';
+    object-fit: cover;
+
+    @media (width >= 40em) {
+      font-size: 1.5rem;
+      padding: 4px 7.5px;
+    }
+
+    @media (width >= 60rem) {
+      font-size: 2rem;
+      padding: 8px 15px;
+    }
+}
+
+nav ul li a:hover{
+    background: rgba(234, 10, 10, 0.4);
+}
+
+
+/*END OF NAVBAR*/
+
+
+/*HEADER*/
+
+
+.portfolio h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    font-family: 'Jersey';
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    
+    @media (width >= 40em) {
+      font-size: 3rem;
+    }
+
+    @media (width >= 60rem) {
+      font-size: 4rem;
+    }
+}
+
+
+/*END OF HEADER*/
+
+
+/*PORTFOLIO PROFILE*/
+
+.image {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px 0 #000000;
+
+}
+
+
+.profile {
+  display: flex;
+  align-items: center; 
+  gap: 6rem;  
+  justify-content: center;
+}
+
+.profile-1 .profile h2 {
+  font-family: 'Jersey';
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  align-items: center;
+
+  @media (width >= 40em) {
+    font-size: 2.125rem;
+  }
+
+  @media (width >= 60rem) {
+    font-size: 3.125rem;
+  }
+}
+
+.profile-1 .profile p {
+  position: absolute;
+  margin-top: 8vh;
+  margin-left: 40%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'myFirstFont';
+  font-size: .900rem;
+  color: #fff;
+
+    @media (width >= 40em) {
+      font-size: .900rem;
+      margin-top: 17vh;
+    }
+  
+    @media (width >= 60rem) {
+      font-size: 1.25rem;
+      margin-top: 20vh;
+    }
+
+    
+
+}
+
+/*END OF PORTFOLIO PROFILE*/
+
+
+/*START OF PORTFOLIO LONG DESCRIPTION*/
+
+.description {
+    text-align: center;
+
+}
+
+.description div p {
+  font-family: 'myFirstFont';
+  font-size: 2vh;
+  color: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  @media (width >= 40em) {
+    font-size: 3vh;
+  }
+
+  @media (width >= 60rem) {
+    font-size: 4vh;
+  }
+}
+
+/*END OF PORTFOLIO LONG DESCRIPTION*/
+
+
+/*START OF MY ART THROUGH THE YEARS*/
+
+.grid .something-1 .masonry .item .something {
+  font-family: 'myFirstFont';
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.grid .something-1 h1 {
+  font-family: 'Jersey';
+  font-size: 1.9rem;
+  margin-bottom: 40px;
+  margin-top: 20%;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+
+  @media (width >= 40em) {
+    font-size: 3rem;
+  }
+
+  @media (width >= 60rem) {
+    font-size: 4rem;
+  }
+
+}
+
+.grid {
+    font-family: sans-serif;
+     margin: 0;
+  }
+  
+  .grid div h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .grid div p {
+    text-align: center;
+    margin-bottom:60px;
+  }
+  
+  .grid div h4{
+    text-align:center; 
+    line-height:80px;
+    font-weight:normal;
+  
+  }
+  
+  .masonry { /* Masonry container */
+      -webkit-column-count: 4;
+    -moz-column-count:4;
+    column-count: 4;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+     margin: 1.5em;
+      padding: 0;
+      -moz-column-gap: 1.5em;
+      -webkit-column-gap: 1.5em;
+      column-gap: 1.5em;
+      font-size: .85em;
+  }
+  .item {
+      display: inline-block;
+      background: #fff;
+      padding: 1em;
+      margin: 0 0 1.5em;
+      width: 100%;
+      -webkit-transition:1s ease all;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-shadow: 2px 2px 4px 0 #000000;
+      border-radius: 5px;
+  }
+  .item img{max-width:100%;}
+  
+  @media only screen and (max-width: 320px) {
+      .masonry {
+          -moz-column-count: 3;
+          -webkit-column-count: 3;
+          column-count: 3;
+      }
+  }
+  
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+      .masonry {
+          -moz-column-count: 3;
+          -webkit-column-count: 3;
+          column-count: 3;
+      }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1200px){
+      .masonry {
+          -moz-column-count: 4;
+          -webkit-column-count: 4;
+          column-count: 4;
+      }
+  }
+  @media only screen and (min-width: 1201px) {
+      .masonry {
+          -moz-column-count: 4;
+          -webkit-column-count: 4;
+          column-count: 4;
+      }
+  }
+
+  /*END OF MY ART THROUGH THE YEARS*/
+
+
+  /*START OF FUTURE PROJECTS*/
+
+  
+  .projects h1{
+    font-family: 'Jersey';
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    object-fit: cover;
+
+    @media (width >= 40em) {
+      font-size: 3rem;
+    }
+  
+    @media (width >= 60rem) {
+      font-size: 6rem;
+    }
+  }
+  
+  .projects {
+    justify-content: space-between;
+  }
+  
+  .future-projects {
+    display: grid;
+    place-items: center;
+    min-height: 50vh;
+  }
+  
+  .results {
+    display: flex;
+    width: calc(80% - 2rem);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .result {
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease;
+    
+    
+  }
+  
+  .results:is(:hover, :focus-within) img {
+    opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+    filter: grayscale(calc(1 - var(--active-lerp, 0)));
+  }
+  
+  :root {
+    --lerp-0: 1;
+    --lerp-1: 0.5787037;
+    --lerp-2: 0.2962963;
+    --lerp-3: 0.125;
+    --lerp-4: 0.037037;
+    --lerp-5: 0.0046296;
+    --lerp-6: 0;
+  }
+  
+  a {
+    outline-offset: 4px;
+  }
+  
+  .result {
+    flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+    transition: flex 0.2s ease;
+  }
+  
+  .result:is(:hover, :focus-within) {
+    --active-lerp: var(--lerp-0);
+    z-index: 7;
+  }
+  .result:has( + li:is(:hover, :focus-within)),
+  .result:is(:hover, :focus-within) + li {
+    --active-lerp: var(--lerp-1);
+    z-index: 6;
+  }
+  .result:has( + li + li:is(:hover, :focus-within)),
+  .result:is(:hover, :focus-within) + li + li {
+    --active-lerp: var(--lerp-2);
+    z-index: 5;
+  }
+  .result:has( + li + li + li:is(:hover, :focus-within)),
+  .result:is(:hover, :focus-within) + li + li + li {
+    --active-lerp: var(--lerp-3);
+    z-index: 4;
+  }
+  .result:has( + li + li + li + li:is(:hover, :focus-within)),
+  .result:is(:hover, :focus-within) + li + li + li + li {
+    --active-lerp: var(--lerp-4);
+    z-index: 3;
+  }
+  .result:has( + li + li + li + li + li:is(:hover, :focus-within)),
+  .result:is(:hover, :focus-within) + li + li + li + li + li {
+    --active-lerp: var(--lerp-5);
+    z-index: 2;
+  }
+  .result:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+  .result:is(:hover, :focus-within) + li + li + li + li + li + li {
+    --active-lerp: var(--lerp-6);
+    z-index: 1;
+  }
+  
+
+  /*END OF FUTURE PROJECTS*/
+
+
+  /*START OF FOOTER*/
+
+.icons-2 h1 {
+  text-align: center; 
+  color: #fff;
+  font-family: 'Jersey';
+  margin-bottom: 10px; 
+  margin-top: 6rem;
+  font-size: 2rem;
+
+  @media (width >= 40em) {
+    font-size: 2.125rem;
+  }
+
+  @media (width >= 60rem) {
+    font-size: 3.125rem;
+  }
+}
+
+.icons {
+  align-items: center;
+  text-align: center;
+}
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+    border-radius: 17vh;
+    box-shadow: 5px 5px 5px rgba(234, 10, 10, 0.4) ;
+  }
+  
+  .fa:hover {
+      opacity: 0.6;
+  }
+  
+  .fa-facebook {
+    background: black;
+    color: rgb(160, 35, 35);
+    
+  }
+
+  .fa-instagram {
+    background: black;
+    color: rgb(160, 35, 35);
+  }
+  
+  .fa-youtube {
+    background: black;
+    color: rgb(160, 35, 35);
+  }
+
+  .fa-github {
+    background: black;
+    color: rgb(160, 35, 35);
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  /*END OF FOOTER*/
