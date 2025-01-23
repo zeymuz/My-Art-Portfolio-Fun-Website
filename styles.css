@@ -146,7 +146,7 @@ nav ul li a:hover{
   font-size: 1.125rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
   text-align: center;
@@ -154,17 +154,20 @@ nav ul li a:hover{
 
   @media (width >= 40em) {
     font-size: 2.125rem;
+   
+
   }
 
   @media (width >= 60rem) {
     font-size: 3.125rem;
+   
   }
 }
 
 .profile-1 .profile p {
   position: absolute;
   margin-top: 8vh;
-  margin-left: 40%;
+  margin-left: 39%;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -338,7 +341,7 @@ nav ul li a:hover{
     text-shadow: 2px 2px 4px #000000;
     object-fit: cover;
 
-    @media (width >= 40em) {
+    @media (width >= 40rem) {
       font-size: 3rem;
     }
   
@@ -346,96 +349,33 @@ nav ul li a:hover{
       font-size: 6rem;
     }
   }
-  
-  .projects {
-    justify-content: space-between;
+
+  div.scroll-container {
+    background-color: black;
+    overflow: scroll;
+    white-space: nowrap;
+    padding: 10px;
   }
   
-  .future-projects {
-    display: grid;
-    place-items: center;
-    min-height: 50vh;
-  }
-  
-  .results {
-    display: flex;
-    width: calc(80% - 2rem);
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-  
-  .result {
-    padding: 0;
-  }
-  
-  img {
-    max-width: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all 0.2s ease;
+  div.scroll-container img {
+    padding: 1px;
+    height: 15rem;
+    width: 40rem;
+    object-fit: scale-down;
+    overflow: hidden; 
     
     
-  }
+    @media (width >= 40rem) {
+      height:20rem;
+      width: 45rem;
+    }
   
-  .results:is(:hover, :focus-within) img {
-    opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
-    filter: grayscale(calc(1 - var(--active-lerp, 0)));
+    @media (width >= 60rem) {
+      height: 25rem;
+      width: 50rem;
+    }
   }
-  
-  :root {
-    --lerp-0: 1;
-    --lerp-1: 0.5787037;
-    --lerp-2: 0.2962963;
-    --lerp-3: 0.125;
-    --lerp-4: 0.037037;
-    --lerp-5: 0.0046296;
-    --lerp-6: 0;
-  }
-  
-  a {
-    outline-offset: 4px;
-  }
-  
-  .result {
-    flex: calc(0.1 + (var(--active-lerp, 0) * 1));
-    transition: flex 0.2s ease;
-  }
-  
-  .result:is(:hover, :focus-within) {
-    --active-lerp: var(--lerp-0);
-    z-index: 7;
-  }
-  .result:has( + li:is(:hover, :focus-within)),
-  .result:is(:hover, :focus-within) + li {
-    --active-lerp: var(--lerp-1);
-    z-index: 6;
-  }
-  .result:has( + li + li:is(:hover, :focus-within)),
-  .result:is(:hover, :focus-within) + li + li {
-    --active-lerp: var(--lerp-2);
-    z-index: 5;
-  }
-  .result:has( + li + li + li:is(:hover, :focus-within)),
-  .result:is(:hover, :focus-within) + li + li + li {
-    --active-lerp: var(--lerp-3);
-    z-index: 4;
-  }
-  .result:has( + li + li + li + li:is(:hover, :focus-within)),
-  .result:is(:hover, :focus-within) + li + li + li + li {
-    --active-lerp: var(--lerp-4);
-    z-index: 3;
-  }
-  .result:has( + li + li + li + li + li:is(:hover, :focus-within)),
-  .result:is(:hover, :focus-within) + li + li + li + li + li {
-    --active-lerp: var(--lerp-5);
-    z-index: 2;
-  }
-  .result:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
-  .result:is(:hover, :focus-within) + li + li + li + li + li + li {
-    --active-lerp: var(--lerp-6);
-    z-index: 1;
-  }
+
   
 
   /*END OF FUTURE PROJECTS*/
@@ -451,7 +391,7 @@ nav ul li a:hover{
   margin-top: 6rem;
   font-size: 2rem;
 
-  @media (width >= 40em) {
+  @media (width >= 40rem) {
     font-size: 2.125rem;
   }
 
